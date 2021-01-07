@@ -1,11 +1,11 @@
 {
   "development": {
-    "database": "dadjokes_gql_api_development",
-    "dialect": "sqlite"
+    "dialect": "sqlite",
+    "storage": "./sqlite-dev.db"
   },
   "test": {
-    "database": "dadjokes_gql_api_development",
-    "dialect": "postgres"
+    "dialect": "sqlite",
+    "storage": "./sqlite-dev.db"
   },
   "production": {
     "use_env_variable": "DATABASE_URL",

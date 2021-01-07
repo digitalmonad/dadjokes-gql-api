@@ -14,7 +14,7 @@ module.exports = (sequelize, DataTypes) => {
     }
   };
   Joke.init({
-    title: DataTypes.TEXT
+    text: DataTypes.TEXT
   }, {
     sequelize,
     modelName: 'Joke',
