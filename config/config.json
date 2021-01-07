@@ -1,0 +1,17 @@
+{
+  "development": {
+    "database": "dadjokes_gql_api_development",
+    "dialect": "sqlite"
+  },
+  "test": {
+    "database": "dadjokes_gql_api_development",
+    "dialect": "postgres"
+  },
+  "production": {
+    "use_env_variable": "DATABASE_URL",
+    "dialect": "postgres",
+    "dialectOptions": {
+      "ssl": true
+    }
+  }
+}
