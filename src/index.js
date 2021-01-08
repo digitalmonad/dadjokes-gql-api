@@ -29,6 +29,7 @@ const resolvers = {
 const server = new ApolloServer({
   typeDefs,
   resolvers,
+  playground: true,
 });
 
 server.listen({ port: PORT }, () =>
