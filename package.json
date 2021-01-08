@@ -1,9 +1,15 @@
 {
-  "name": "dadjokes-gql_api",
+  "name": "dadjokes-gql-api",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "start": "node src/index.js",
+    "start:dev": "nodemon src/index.js",
+    "db:reset": "npx sequelize-cli db:drop && npx sequelize-cli db:create && npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all"
+  },
   "dependencies": {
+    "apollo-server": "^2.19.1",
     "pg": "^8.5.1",
     "sequelize": "^6.3.5",
     "sqlite3": "^5.0.0"
