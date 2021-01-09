@@ -1,2 +1,10 @@
+
 node_modules
 sqlite-dev.db
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
